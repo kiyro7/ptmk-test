@@ -104,29 +104,6 @@ class EmployeeApp:
             print(row[0], row[1], row[2], emp.get_age(), "лет", sep="\t")
         self.db.close()
 
-    # def fourth_mode(self):
-    #     print("Создаём сотрудников")
-    #     start = time()
-    #     employees = []
-    #     total_rows = 1_000_000
-    #     special_rows = 100
-    #     normal_rows = total_rows - special_rows
-    #
-    #     for _ in range(normal_rows):
-    #         fio = self._random_fio()
-    #         birth = self._random_birth()
-    #         gender = random.choice(GENDERS)
-    #         employees.append(Employee(fio, birth, gender))
-    #
-    #     for _ in range(special_rows):
-    #         fio = "F" + self._random_str(6) + " " + self._random_str(6) + " " + self._random_str(6)
-    #         birth = self._random_birth()
-    #         employees.append(Employee(fio, birth, "Male"))
-    #
-    #     self._batch_insert(employees)
-    #     print(f"Заполнение БД завершено, заняло {round(time() - start, 3)} секунд")
-    #     self.db.close()
-
     def fourth_mode(self):
         print("Создаём сотрудников")
         start = time()
